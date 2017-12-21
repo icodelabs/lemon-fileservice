@@ -1,4 +1,4 @@
-package org.csource.oss;
+package cn.lemon.fileservice.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -16,18 +16,15 @@ public class AliossConfig {
 	private String baseOssUri;
 	private String accessKeyId;
 	private String accessKeySecret;
-	
+
 	public String getBaseOssUri() {
-		if (Strings.isNullOrEmpty(endPoint)) {
-			return endPoint;
-		}
-		if (!Strings.isNullOrEmpty(baseOssUri)) {
-			return baseOssUri;
-		}
-		int idx = endPoint.indexOf("://")+3;
-		baseOssUri = endPoint.substring(idx) + this.bucketName + endPoint.substring(idx, endPoint.length())+"/";
 		return baseOssUri;
 	}
+
+	public void setBaseOssUri(String baseOssUri) {
+		this.baseOssUri = baseOssUri;
+	}
+
 	public String getBucketName() {
 		return bucketName;
 	}

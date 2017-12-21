@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: fileservice
+  cross:
+    mapping: /**
+
+server:
+  port: 8066
+  use-forward-headers: false
+
+oauth:
+  appIds:
+    - 333FED983F9E4564FD05D44FFA582903
+    - 333FED983F9E4564FD05D44FFA582902
+
+alioss:
+  bucketName: yuxin-app
+  endPoint: https://oss-cn-hangzhou.aliyuncs.com/
+  baseOssUri: https://yuxin-app.oss-cn-hangzhou.aliyuncs.com/
+  accessKeyId: LTAI3dEb3AxaN60w
+  accessKeySecret: EVhE8calf6PjgTKpJQcIILcSyjkSap

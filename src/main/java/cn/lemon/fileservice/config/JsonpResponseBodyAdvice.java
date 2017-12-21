@@ -1,4 +1,4 @@
-package cn.lemon.fileservice;
+package cn.lemon.fileservice.config;
 
 import javax.servlet.http.HttpServletRequest;
 
